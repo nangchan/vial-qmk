@@ -20,8 +20,13 @@
 
 #pragma once
 
+// EE_HANDS for left keyboard will make touchpad not work
+// MASTER_LEFT for right keyboard will make left and right half swap keys
+// Therefore use EE_HANDS for the right and MASTER_LEFT for the left
 
-//#define EE_HANDS //since now only left 
+// 1. uncomment EE_HANDS and comment MASTER_LEFT for right hand side
+// 2. uncheck azoteq from vial layout for scroll wheel to be assigned
+// #define EE_HANDS // since now only left 
 #define MASTER_LEFT
 #define USB_VBUS_PIN GP19
 
