@@ -461,6 +461,13 @@ generate-keyboards-file:
 clean:
 	echo -n 'Deleting .build/ ... '
 	rm -rf $(BUILD_DIR)
+	rm ./*.uf2
+	echo 'done.'
+
+.PHONY: sofleplus2
+sofleplus2:
+	echo -n 'Building for sofleplus2 in .build/ ... '
+	$(QMK_BIN) compile -kb sofleplus2 -km tps65-403c
 	echo 'done.'
 
 .PHONY: distclean distclean_qmk

@@ -82,6 +82,7 @@
 #define RGB_MATRIX_DEFAULT_ON true   // RGB on by default
 
 /* Keyboard name override for this keymap */
+#undef PRODUCT
 #define PRODUCT "SoflePLUS2 v4.03c TPS65"
 
 /* Vial UID for this specific keymap */
